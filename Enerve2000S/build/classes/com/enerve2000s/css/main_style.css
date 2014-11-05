@@ -1,0 +1,85 @@
+.nav_m99{ 
+    -fx-background-image: url("../img/sample/btnFinish_default.gif");
+    -fx-background-repeat: no-repeat;    
+}
+.nav_m99:hover{ 
+    -fx-background-image: url("../img/sample/btnFinish_over.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m99:pressed{ 
+    -fx-background-image: url("../img/sample/btnFinish_press.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m99_selected{ 
+    -fx-background-image: url("../img/sample/btnFinish_press.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m1{ 
+    -fx-background-image: url("../img/sample/btnDCData_default.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m1:hover{ 
+    -fx-background-image: url("../img/sample/btnDCData_over.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m1:ppressed{ 
+    -fx-background-image: url("../img/sample/btnDCData_press.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m1_selected{ 
+    -fx-background-image: url("../img/sample/btnDCData_press.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m2{ 
+    -fx-background-image: url("../img/sample/btnSetup_default.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m2:hover{ 
+    -fx-background-image: url("../img/sample/btnSetup_over.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m2:pressed{ 
+    -fx-background-image: url("../img/sample/btnSetup_press.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m2_selected{ 
+    -fx-background-image: url("../img/sample/btnSetup_press.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m3{ 
+    -fx-background-image: url("../img/sample/btnReportView_default.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m3:hover{ 
+    -fx-background-image: url("../img/sample/btnReportView_over.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m3:pressed{ 
+    -fx-background-image: url("../img/sample/btnReportView_press.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.nav_m3_selected{ 
+    -fx-background-image: url("../img/sample/btnReportView_press.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+
+
+
+
+
+

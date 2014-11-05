@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enerve2000s.fxml.Login">
+<!--  <stylesheets>
+      <URL value="@../css/login_style.css" />
+   </stylesheets>       -->
+   <children>
+      <StackPane />
+      <ImageView layoutX="321.0" layoutY="238.0">
+         <image>
+            <Image url="@../img/sample/login_bg.gif" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userid" layoutX="409.0" layoutY="263.0" />
+      <TextField fx:id="userpw" layoutX="409.0" layoutY="293.0" />
+      <Button fx:id="btn_login" layoutX="566.0" layoutY="263.0" mnemonicParsing="false" onAction="#processLogin" prefHeight="45.0" prefWidth="60.0" styleClass="login" text="로그인" />
+      <Label fx:id="errormsg" layoutX="363.0" layoutY="377.0" textFill="RED" />
+   </children>
+</AnchorPane>

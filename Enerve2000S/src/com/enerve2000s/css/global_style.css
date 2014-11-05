@@ -1,0 +1,112 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+/*
+@font-face {font-family:'나눔고딕'; src:url('./폰트폴더/NanumGothic.eot')}; 
+@font-face {font-family:'나눔고딕'; src:url('./폰트폴더/NanumGothic.woff')}; 
+
+.tab *.tab-label{
+    -fx-text-fill: #528ed1;
+    -fx-rotate: 270;
+}
+
+.tab {
+    -fx-padding: 0.2em 0.1em 0.2em 0.1em;
+}
+*/
+
+
+.label{
+    -fx-text-fill: #528ed1;
+    -fx-font-size: 14px; 
+    -fx-font-family: "나눔고딕" ;  
+}
+
+
+.pagetitle{ 
+    -fx-text-fill: black; 
+    -fx-font-size: 16px; 
+    -fx-font-weight:bold; 
+    -fx-font-family: "나눔고딕" ;  
+}
+
+.partitle{
+    -fx-text-fill: #3271bc;    
+    -fx-font-size: 14px; 
+    -fx-font-weight:bold;     
+    -fx-font-family: "나눔고딕" ;  
+}
+
+.sentitle{
+    -fx-text-fill: black;    
+    -fx-font-size: 12px; 
+    -fx-font-family: "나눔고딕" ;  
+}
+
+.txtf_valnow { 
+    -fx-background-color: black, #d9e3fb;   
+}
+
+.txtf_valnew{ 
+    -fx-background-color: black, #ded9fb;       
+}
+
+.lab_wordbg{
+    -fx-text-fill : black; 
+    -fx-font-size: 11px; 
+    -fx-padding: 0 0 0 7px;
+    -fx-background-image: url("../img/sample/lable_background.gif");
+    -fx-background-repeat: no-repeat;    
+}
+
+.lab_wordlegend{
+    -fx-text-fill : black; 
+    -fx-font-size: 11px; 
+    -fx-font-weight:bold;
+}
+
+
+.setupwrite{ 
+    -fx-background-image:url("../img/sample/btnStyle5_default.gif");    
+    -fx-background-repeat: no-repeat;        
+
+}
+.setupwrite:hover{ 
+    -fx-background-image:url("../img/sample/btnStyle5_over.gif"); 
+    -fx-background-repeat: no-repeat;        
+ 
+}
+.setupwrite:pressed{ 
+    -fx-background-image:url("../img/sample/btnStyle5_press.gif");  
+    -fx-background-repeat: no-repeat;        
+}
+
+.setupwrite2{ 
+    -fx-background-image:url("../img/sample/btnStyle1_default.gif");    
+    -fx-background-repeat: no-repeat;        
+}
+.setupwrite2:hover { 
+    -fx-background-image:url("../img/sample/btnStyle1_over.gif"); 
+    -fx-background-repeat: no-repeat;        
+}
+.setupwrite2:pressed{ 
+    -fx-background-image:url("../img/sample/btnStyle1_press.gif");  
+    -fx-background-repeat: no-repeat;        
+}
+
+.setupmenu{ 
+    -fx-background-image:url("../img/sample/btnStyle4_default.gif");    
+    -fx-background-repeat: no-repeat;        
+}
+.setupmenu:hover{ 
+    -fx-background-image:url("../img/sample/btnStyle4_over.gif"); 
+    -fx-background-repeat: no-repeat;        
+}
+.setupmenu:pressed{ 
+    -fx-background-image:url("../img/sample/btnStyle4_press.gif");  
+    -fx-background-repeat: no-repeat;        
+}
+
+.setupmenu:selected{ 
+    -fx-text-fill : black;
+    -fx-background-image:url("../img/sample/btnStyle4_select.gif");  
+    -fx-background-repeat: no-repeat;        
+}

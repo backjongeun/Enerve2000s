@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="67.0" layoutY="43.0" text="리포트">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="40.0" layoutY="105.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="250.0" layoutY="105.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="182.0" layoutY="105.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="115.0" layoutY="105.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="40.0" layoutY="172.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="40.0" layoutY="210.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="43.0" layoutY="250.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

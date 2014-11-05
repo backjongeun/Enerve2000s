@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enerve2000s.fxml.Setup">
+  <stylesheets>
+      <URL value="@../css/global_style.css" />
+   </stylesheets>       
+   <children>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="530.0" layoutY="33.0" stroke="DODGERBLUE" strokeType="INSIDE" strokeWidth="2.0" width="875.0" />
+      <Group layoutX="-19.0" layoutY="-29.0">
+         <children>
+            <Label layoutX="23.5" layoutY="28.0" styleClass="pagetitle" text="DC 설정을 확인 및 변경합니다.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="1010.0" layoutX="19.5" layoutY="57.0" stroke="#3271bc" />
+         </children>
+      </Group>
+  <AnchorPane fx:id="pan_setup_m1" layoutY="39.0" minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="875.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="25.0" prefWidth="130.0" spacing="5.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="30.0" prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="목표값" />
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="부하개수" />
+                  <Label layoutX="10.0" layoutY="34.0" prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="펄스정수" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="PCT비율" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="펄스폼" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="제어방식" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="복합(순차)개수설정" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="제어ON Delay" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="제어OFF Delay" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="경보음 유지시간" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="안전율" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="초기제어금지시간" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="강제투입시간" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="운전모드" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="경보접점허용여부" />
+                  <Label prefHeight="21.0" prefWidth="130.0" styleClass="lab_wordbg" text="전기요금적용방식" />
+               </children>
+            </VBox>
+            <VBox layoutX="144.0" layoutY="25.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 65000" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 32(개)" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 65000" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 65000" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="Pulse/Toggle" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="순차/순위/복합" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 32(개)" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 900(초)" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 900(초)" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 900(초)" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 50(%)" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 900(초)" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="1 ~ 900(초)" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="자동/수동/그룹" />
+                  <Label prefHeight="21.0" styleClass="lab_wordlegend" text="허용/금지" />
+               </children>
+            </VBox>
+            <VBox layoutX="266.0" layoutY="25.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <TextField layoutX="303.0" layoutY="29.0" prefHeight="18.0" styleClass="txtf_valnow" />
+                  <TextField prefHeight="21.0" styleClass="txtf_valnow" />
+                  <TextField styleClass="txtf_valnow" />
+                  <TextField styleClass="txtf_valnow" />
+                  <HBox prefHeight="23.0" spacing="20.0">
+                     <children>
+                        <RadioButton layoutX="10.0" layoutY="122.0" mnemonicParsing="false" text="Pluse" />
+                        <RadioButton mnemonicParsing="false" text="Toggle" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="318.0" prefHeight="23.0" spacing="20.0">
+                     <children>
+                        <RadioButton layoutX="10.0" layoutY="122.0" mnemonicParsing="false" text="순차" />
+                        <RadioButton mnemonicParsing="false" text="순위" />
+                        <RadioButton layoutX="75.0" layoutY="10.0" mnemonicParsing="false" text="복합" />
+                     </children>
+                  </HBox>
+                  <TextField styleClass="txtf_valnow" />
+                  <TextField styleClass="txtf_valnow" />
+                  <TextField styleClass="txtf_valnow" />
+                  <TextField styleClass="txtf_valnow" />
+                  <TextField styleClass="txtf_valnow" />
+                  <TextField styleClass="txtf_valnow" />
+                  <HBox layoutX="10.0" layoutY="122.0" prefHeight="23.0" spacing="20.0">
+                     <children>
+                        <RadioButton layoutX="10.0" layoutY="122.0" mnemonicParsing="false" text="자동" />
+                        <RadioButton mnemonicParsing="false" text="수동" />
+                        <RadioButton layoutX="75.0" layoutY="10.0" mnemonicParsing="false" text="그룹" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="346.0" prefHeight="23.0" spacing="20.0">
+                     <children>
+                        <RadioButton layoutX="10.0" layoutY="122.0" mnemonicParsing="false" text="허용" />
+                        <RadioButton mnemonicParsing="false" text="금지" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="487.0" layoutY="25.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <TextField layoutX="465.0" layoutY="29.0" styleClass="txtf_valnew" />
+                  <TextField layoutX="10.0" layoutY="10.0" styleClass="txtf_valnew" />
+                  <TextField styleClass="txtf_valnew" />
+                  <TextField styleClass="txtf_valnew" />
+                  <HBox prefHeight="23.0" spacing="20.0">
+                     <children>
+                        <RadioButton layoutX="10.0" layoutY="122.0" mnemonicParsing="false" text="Pluse" />
+                        <RadioButton mnemonicParsing="false" text="Toggle" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" spacing="20.0">
+                     <children>
+                        <RadioButton layoutX="10.0" layoutY="122.0" mnemonicParsing="false" text="순차" />
+                        <RadioButton mnemonicParsing="false" text="순위" />
+                        <RadioButton layoutX="75.0" layoutY="10.0" mnemonicParsing="false" text="복합" />
+                     </children>
+                  </HBox>
+                  <TextField styleClass="txtf_valnew" />
+                  <TextField styleClass="txtf_valnew" />
+                  <TextField styleClass="txtf_valnew" />
+                  <TextField styleClass="txtf_valnew" />
+                  <TextField styleClass="txtf_valnew" />
+                  <TextField styleClass="txtf_valnew" />
+                  <HBox prefHeight="23.0" spacing="20.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" text="자동" />
+                        <RadioButton mnemonicParsing="false" text="수동" />
+                        <RadioButton mnemonicParsing="false" text="그룹" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" spacing="20.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" text="허용" />
+                        <RadioButton mnemonicParsing="false" text="금지" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="714.0" layoutY="25.0" prefWidth="150.0" spacing="5.0">
+               <children>
+                  <Button layoutX="672.0" layoutY="28.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="목표값" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="부하개수" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="펄스정수" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="PCT비율" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="제어방식" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="복합(순차)개수설정" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="제어ON Delay" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="제어OFF Delay" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="경보음 유지시간" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="안전율" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="초기제어금지시간" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="강제투입시간" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="운전모드" />
+                  <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" styleClass="setupwrite" text="경보접점허용여부" />
+                  <Button layoutX="10.0" layoutY="374.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="65.0" styleClass="setupwrite2" text="전기요금 적용방식" textAlignment="CENTER" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Group layoutY="-6.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="102.0" layoutX="144.0" layoutY="419.0" stroke="#949494" strokeType="INSIDE" width="283.0" />
+                  <RadioButton layoutX="293.0" layoutY="499.0" mnemonicParsing="false" text="사용자정의" />
+                  <RadioButton layoutX="293.0" layoutY="450.0" mnemonicParsing="false" text="6:교육용전력 " />
+                  <RadioButton disable="true" layoutX="170.0" layoutY="475.0" mnemonicParsing="false" text="3:산업용전력 병" />
+                  <RadioButton layoutX="293.0" layoutY="427.0" mnemonicParsing="false" text="5:일반용전력 을" />
+                  <RadioButton layoutX="170.0" layoutY="449.0" mnemonicParsing="false" text="2:산업용전력 을" />
+                  <RadioButton layoutX="170.0" layoutY="426.0" mnemonicParsing="false" selected="true" text="1:산업용전력 갑" />
+                  <RadioButton layoutX="293.0" layoutY="476.0" mnemonicParsing="false" text="7:기타제어" />
+                  <RadioButton layoutX="170.0" layoutY="498.0" mnemonicParsing="false" text="4:산업용전력 갑" />
+               </children>
+            </Group>
+            <Label layoutX="61.0" layoutY="457.0" styleClass="lab_wordlegend" text="1 ~8 (Type)" />
+            <Group layoutX="294.0" layoutY="-6.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="102.0" layoutX="144.0" layoutY="419.0" stroke="#949494" strokeType="INSIDE" width="283.0" />
+                  <RadioButton layoutX="293.0" layoutY="499.0" mnemonicParsing="false" text="사용자정의" />
+                  <RadioButton layoutX="293.0" layoutY="450.0" mnemonicParsing="false" text="6:교육용전력 " />
+                  <RadioButton disable="true" layoutX="170.0" layoutY="475.0" mnemonicParsing="false" text="3:산업용전력 병" />
+                  <RadioButton layoutX="293.0" layoutY="427.0" mnemonicParsing="false" text="5:일반용전력 을" />
+                  <RadioButton layoutX="170.0" layoutY="449.0" mnemonicParsing="false" text="2:산업용전력 을" />
+                  <RadioButton layoutX="170.0" layoutY="426.0" mnemonicParsing="false" selected="true" text="1:산업용전력 갑" />
+                  <RadioButton layoutX="293.0" layoutY="476.0" mnemonicParsing="false" text="7:기타제어" />
+                  <RadioButton layoutX="170.0" layoutY="498.0" mnemonicParsing="false" text="4:산업용전력 갑" />
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m2" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="35.0" layoutY="54.0" styleClass="lab_wordbg" text="부하활성여부" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m3" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="3" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m4" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="4" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m5" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="5" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m6" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="6" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m7" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="7" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m8" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="8" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m9" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="9" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m10" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="10" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m11" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="11" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m12" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="12" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan_setup_m13" layoutY="39.0" prefHeight="530.0" prefWidth="875.0" visible="false">
+         <children>
+            <Label layoutX="36.0" layoutY="67.0" text="13" />
+         </children>
+      </AnchorPane>
+      
+      <VBox layoutX="883.0" layoutY="62.0" spacing="5.0">
+         <children>
+            <ToggleButton fx:id="btn_setup_m1" mnemonicParsing="false" onAction="#show_steup_m1" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="DC제어관련 설정" />
+            <ToggleButton fx:id="btn_setup_m2" mnemonicParsing="false" onAction="#show_steup_m2" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="활정/약정/그룹설정" />
+            <ToggleButton fx:id="btn_setup_m3" mnemonicParsing="false" onAction="#show_steup_m3" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="이더넷/전력제어설정" />
+            <ToggleButton fx:id="btn_setup_m4" mnemonicParsing="false" onAction="#show_setup_m4" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="부하번호/우선순위설정" />
+            <ToggleButton fx:id="btn_setup_m5" mnemonicParsing="false" onAction="#show_setup_m5" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="목표값/계절설정" />
+            <ToggleButton fx:id="btn_setup_m6" mnemonicParsing="false" onAction="#show_setup_m6" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="부하시간대(평일)" />
+            <ToggleButton fx:id="btn_setup_m7" mnemonicParsing="false" onAction="#show_setup_m7" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="부하시간대(공휴일)" />
+            <ToggleButton fx:id="btn_setup_m8" mnemonicParsing="false" onAction="#show_setup_m8" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="수신로그보기" />
+            <ToggleButton fx:id="btn_setup_m9" mnemonicParsing="false" onAction="#show_setup_m9" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="사용자정보설정/초기화" />
+            <ToggleButton fx:id="btn_setup_m10" mnemonicParsing="false" onAction="#show_setup_m10" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="공휴일 설정" />
+            <ToggleButton fx:id="btn_setup_m11" mnemonicParsing="false" onAction="#show_setup_m11" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="DC통신관련 설정" />
+            <ToggleButton fx:id="btn_setup_m12" mnemonicParsing="false" onAction="#show_setup_m12" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="설정값 복구" />
+            <ToggleButton fx:id="btn_setup_m13" mnemonicParsing="false" onAction="#show_setup_m13" prefHeight="25.0" prefWidth="125.0" styleClass="setupmenu" text="시간별목표전력설정" />
+         </children>
+      </VBox>
+   </children> 
+</AnchorPane>

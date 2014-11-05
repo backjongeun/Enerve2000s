@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <stylesheets>
+      <URL value="@../css/global_style.css" />
+   </stylesheets>          
+   <children>
+      <Group layoutX="-19.0" layoutY="-29.0">
+         <children>
+            <Label layoutX="23.5" layoutY="28.0" styleClass="pagetitle" text="각각의 전력을 확인 합니다. ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="1010.0" layoutX="19.5" layoutY="57.0" stroke="#3271bc" />
+         </children>
+      </Group>
+      <Group layoutX="-19.0" layoutY="406.0">
+         <children>
+            <Label layoutX="23.5" layoutY="28.0" styleClass="pagetitle" text="각각의 전력을 확인 합니다. ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="1010.0" layoutX="19.5" layoutY="57.0" stroke="#3271bc" />
+         </children>
+      </Group>
+      <LineChart layoutX="65.0" layoutY="70.0" prefHeight="307.0" prefWidth="881.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="-21.0" layoutY="207.0" rotate="-90.0" text="Demand Power[kW]" />
+      <Label layoutX="437.0" layoutY="390.0" text="Demand Interval[sec]" />
+      <Group layoutX="-2.0" layoutY="-22.0">
+         <children>
+            <Line endX="20.0" layoutX="476.5" layoutY="77.0" stroke="#f6ff00" strokeWidth="3.0" />
+            <Line endX="20.0" layoutX="279.5" layoutY="77.0" stroke="#ee0000" strokeWidth="3.0" />
+            <Label layoutX="507.5" layoutY="69.0" text="예측전력" />
+            <Line endX="20.0" layoutX="574.5" layoutY="77.0" stroke="#0eed00" strokeWidth="3.0" />
+            <Line endX="20.0" layoutX="376.5" layoutY="77.0" stroke="#3c00ff" strokeWidth="3.0" />
+            <Label layoutX="310.5" layoutY="69.0" text="목표전력" />
+            <Label layoutX="407.5" layoutY="69.0" text="현재전력" />
+            <Label layoutX="605.5" layoutY="69.0" text="기준전력" />
+         </children>
+      </Group>
+      <Group layoutX="-26.0" layoutY="-8.0">
+         <children>
+            <ImageView layoutX="31.0" layoutY="486.0">
+               <image>
+                  <Image url="@../img/sample/bg_control.gif" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="66.0" layoutY="512.0">
+               <image>
+                  <Image url="@../img/sample/icon_control_auto_on.gif" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="143.0" layoutY="512.0">
+               <image>
+                  <Image url="@../img/sample/icon_control_ma_off.gif" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="211.0" layoutY="512.0">
+               <image>
+                  <Image url="@../img/sample/icon_control_group_off.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="171.0" layoutY="488.0" styleClass="partitle" text="제어 모드" />
+            <ImageView layoutX="282.0" layoutY="512.0">
+               <image>
+                  <Image url="@../img/sample/icon_control_kepco_off.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="313.0" layoutY="-8.0">
+         <children>
+            <ImageView layoutX="27.0" layoutY="486.0">
+               <image>
+                  <Image url="@../img/sample/bg_control.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="171.0" layoutY="488.0" styleClass="partitle" text="Demand Time" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#94ff1f" height="27.0" layoutX="86.0" layoutY="529.0" stroke="BLACK" strokeType="INSIDE" width="226.0" />
+         </children>
+      </Group>
+      <Group layoutX="641.0" layoutY="-8.0">
+         <children>
+            <ImageView layoutX="35.0" layoutY="486.0">
+               <image>
+                  <Image url="@../img/sample/bg_control.gif" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="57.0" layoutY="511.0">
+               <image>
+                  <Image url="@../img/sample/icon_warning_none_on.gif" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="131.0" layoutY="511.0">
+               <image>
+                  <Image url="@../img/sample/icon_warning_step1_off.gif" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="209.0" layoutY="511.0">
+               <image>
+                  <Image url="@../img/sample/icon_warning_step2_off.gif" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="288.0" layoutY="511.0">
+               <image>
+                  <Image url="@../img/sample/icon_warning_step3_off.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="171.0" layoutY="488.0" styleClass="partitle" text="경보 상태" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
